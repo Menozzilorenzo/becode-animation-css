@@ -1,0 +1,70 @@
+body{
+    background-color: #656565;
+}
+
+ul{
+    list-style: none;
+    background-position: 100%;
+    padding-left: 0px;
+}
+
+li{
+    color: #fe5e00;
+    width: 20%;
+    
+}
+
+.ico{
+    display: inline-block;
+    background-color: #4c4b4b;
+    padding: 20px;
+    width: 15%;
+    height: 40px;
+    transition: all 1s;
+    &:hover{
+        background-color: white;
+    }
+}
+
+i{
+   font-size: 40px;
+}
+
+.hovertext{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    background-color: #262626;
+    transition: all 1s;
+    transform: translateX(-400px);
+    opacity: 0;
+}
+
+.one{
+    &:hover .hovertext{
+        transform: translateX(-4px);
+        opacity: 1;
+    }
+}
+
+.two{
+    &:hover .hovertext{
+        transform: translateX(-4px);
+        opacity: 1;
+    }
+}
+
+.three{
+    &:hover .hovertext{
+        transform: translateX(-4px);
+        opacity: 1;
+    }
+}
+
+.four{
+    &:hover .hovertext{
+        transform: translateX(-4px);
+        opacity: 1;
+    }
+}

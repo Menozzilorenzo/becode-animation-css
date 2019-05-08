@@ -1,0 +1,92 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5%;
+}
+
+.card{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 2px 5px 3px #e3e3e3;
+    &:hover{
+        box-shadow: 0px 2px 16px 17px #e3e3e3;
+    }
+    &:hover main{
+        transform: translateY(-100px);
+    }
+    &:hover .details{
+        opacity: 1;
+    }
+    &:hover img{
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    & img{
+        width: 450px;
+        height: 270px;
+        transition: transform 1s;
+        opacity: 1;
+    }
+    & .date{
+        position: absolute;
+        background-color: #de5042;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        left: 390px;
+        top: 15px;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+main{
+    position: absolute;
+    top: 260px;
+    width: 450px;
+    background-color: white;
+    transition: transform 1s;
+/*    &:hover{
+        transform: translateY(-100px);
+    }*/
+    & article{
+        padding: 0px 40px;
+    }
+    & .details{
+        opacity: 0;
+        color: #666765;
+    }
+    & p{
+        background-color: #eb4b3f;
+        color: white;
+        padding: 10px;
+        width: 50px;
+        position: absolute;
+        top: -50px;
+    }
+    & h2{
+        color: #e8513e;
+    }
+}
+
+footer{
+    background-color: white;
+    position: absolute;
+    width: 450px;
+    top: 385px;
+    & span{
+        float: left;
+        color: #9a9997;
+        padding: 25px;
+    }
+}
